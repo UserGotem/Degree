@@ -1,0 +1,55 @@
+@media only screen and (max-width: 800px){
+
+  header, 
+  header > div.logo,
+  header > nav,
+  header > nav a 
+  main{
+    display: block;
+    float: none;
+    height: auto;
+    width: 100%;
+    clear: both;
+    position: relative;
+    padding: 0;
+  }
+
+  header nav{
+    text-align: center;
+  }
+
+
+  header nav a{
+    padding: 5px 0;
+  }
+
+  .v-center, .h-right{
+    display: block;
+    position: relative;
+    transform: none;
+  }
+
+  .showcase {
+    background-image: url('../images/screenofcode.jpg');
+    color: var(--teksti-vaalea);
+    width: 100%;
+    max-width: 100%;
+    padding: 10px 0;
+    text-align: center;
+    font-size: 1.2em;
+    line-height: 1.2em;
+  }
+  .ingressi {
+    font-size: 1.2em;
+    font-style: normal;
+    line-height: 1em;
+  }
+  
+  .ingressi::first-letter {
+    float: left;
+    font-size: 2.2em;
+    line-height: 1em;
+    font-weight: bold;
+    margin-right: 0.1em;
+  }
+}
