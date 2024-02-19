@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+:root {
+    --teksti: #333;
+    --tausta: #eee;
+    --teksti-vaalea: #ddd;
+    --bg-dark: #5f5f5f;
+    --highlight: #9ad007;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.v-center {
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+}
+
+.h-right{
+    position: absolute;
+    right: 0;
+}
+
+.hightlight {
+  color: var(--hightlight);
+  display: inline-block;
+  transform: rotate(20deg);
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Lato', sans-serif;
+    background-color: var(--tausta);
+    color: var(--teksti)
+
+}
+
+header{
+    background-color: var(--bg-dark);
+    color: var(--teksti-vaalea);
+    padding: 10px;
+    height: 100px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    border-bottom: var(--highlight) solid 5px;
+
+}
+
+
+header .logo {
+  float: left;
+  font-size: 2em;
+} 
+
+header .logo img {
+    height: 80px;
+    padding: 5px;
+    display: block;
+    float: left;
+}
+
+header nav a {
+  display: inline-block;
+  font-size: 1.3em;
+  color: var(--teksti-vaalea);
+  text-decoration: none;
+  padding: 20px 0.5em;
+}
+
+header nav a:hover{
+  color: var(--teksti);
+  background-color: var(--hightlight);
+}
+
+.ingressi {
+  padding: 0 5px;
+  font-size: 1.2em;
+  font-style: normal;
+  line-height: 1.2em;
+  margin: 30px;
+}
+
+.ingressi::first-letter {
+  float:left;
+  font-size: 3.2em;
+  line-height: 1em;
+  font-weight: bold;
+  margin-right: 0.1em;
+}
+
+
+main {
+  font-size: 1.5em;
+  line-height: 1.5em;
+  padding-top: 80px;
+  margin: 10px;
+}
+
+table, th, td {
+  border: 1px solid;
+}
+
+.showcase {
+  background-image: url('../images/screenofcode.jpg');
+  color: var(--teksti-vaalea);
+  width: 100%;
+  max-width: 100%;
+  padding: 40px 0;
+  text-align: center;
+  font-size: 1.7em;
+  line-height: 1.7em;
+}
+
+footer {
+  background-color: var(--bg-dark);
+  color: var(--teksti-vaalea);
+  padding: 40px 0;
+  text-align: center;
+  font-size: 1.2em;
+}
